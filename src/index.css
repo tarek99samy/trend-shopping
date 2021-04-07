@@ -1,35 +1,26 @@
 * {
-  font-family: "Almarai";
-}
+  font-family: "Almarai"; }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body,
 dd,
 dl,
 ul {
-  margin: 0;
-}
+  margin: 0; }
 
 ul {
-  padding: 0;
-}
+  padding: 0; }
 
 li {
-  list-style: none;
-}
+  list-style: none; }
 
 a {
   text-decoration: none;
-  color: unset;
-}
+  color: unset; }
 
 a:hover {
-  text-decoration: none;
-}
-
-/*# sourceMappingURL=index.css.map */
+  text-decoration: none; }
