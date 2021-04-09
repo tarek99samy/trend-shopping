@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import AddMobile from "./pages/add_mobile/add_mobile";
 import Home from "./pages/home/home";
 import Navbar from "./components/navbar/navbar";
