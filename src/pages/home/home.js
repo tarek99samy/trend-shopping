@@ -11,21 +11,141 @@ ReactFC.fcRoot(FusionCharts, Pie2D, FusionTheme);
 
 export default function Home() {
 	const initialMobiles = [
-		{ name: "galaxy s4", brand: "Samsung", year: "2016", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "xperia Z ultra", brand: "Sony", year: "2010", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "iphone X max", brand: "Apple", year: "2020", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "note one", brand: "Nokia", year: "2014", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "mate neo dual", brand: "LG", year: "2011", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "galaxy s4", brand: "Samsung", year: "2016", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "xperia Z", brand: "Sony", year: "2010", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "iphone X max", brand: "Apple", year: "2020", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "note one", brand: "Nokia", year: "2014", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "mate neo dual", brand: "LG", year: "2011", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "galaxy s4", brand: "Samsung", year: "2016", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "xperia Z", brand: "Sony", year: "2010", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "iphone X max", brand: "Apple", year: "2020", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "note one", brand: "Nokia", year: "2014", color: "black", screen: `5"`, simType: "dual sim" },
-		{ name: "mate neo dual", brand: "LG", year: "2011", color: "black", screen: `5"`, simType: "dual sim" },
+		{
+			name: "galaxy s4",
+			brand: "Samsung",
+			year: "2016",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "xperia Z ultra",
+			brand: "Sony",
+			year: "2010",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "iphone X max",
+			brand: "Apple",
+			year: "2020",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "note one",
+			brand: "Nokia",
+			year: "2014",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "mate neo dual",
+			brand: "LG",
+			year: "2011",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "galaxy s4",
+			brand: "Samsung",
+			year: "2016",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "xperia Z",
+			brand: "Sony",
+			year: "2010",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "iphone X max",
+			brand: "Apple",
+			year: "2020",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "note one",
+			brand: "Nokia",
+			year: "2014",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "mate neo dual",
+			brand: "LG",
+			year: "2011",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "galaxy s4",
+			brand: "Samsung",
+			year: "2016",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "xperia Z",
+			brand: "Sony",
+			year: "2010",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "iphone X max",
+			brand: "Apple",
+			year: "2020",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "note one",
+			brand: "Nokia",
+			year: "2014",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
+		{
+			name: "mate neo dual",
+			brand: "LG",
+			year: "2011",
+			color: "black",
+			screen: `5"`,
+			simType: "dual sim",
+			memory: "64GB",
+		},
 	];
 	const initialData = {
 		allMobiles: initialMobiles,
@@ -41,7 +161,7 @@ export default function Home() {
 
 	const barChartConfigs = {
 		type: "column2d",
-		width: "700",
+		width: "500",
 		height: "400",
 		dataFormat: "json",
 		dataSource: {
@@ -58,14 +178,12 @@ export default function Home() {
 
 	const pieChartConfigs = {
 		type: "pie2d",
-		width: "700",
+		width: "500",
 		height: "400",
 		dataFormat: "json",
 		dataSource: {
 			chart: {
-				caption: "manufacture year VS mobile count",
-				xAxisName: "Year",
-				yAxisName: "Count",
+				caption: "brand VS mobile count",
 				numberSuffix: "K",
 				theme: "fusion",
 			},
@@ -76,30 +194,32 @@ export default function Home() {
 	useEffect(() => {
 		if (!localStorage.getItem("data")) {
 			localStorage.setItem("data", JSON.stringify(initialData));
+		} else {
+			let allData = JSON.parse(localStorage.getItem("data"));
+			setCurrentMobiles(allData.allMobiles);
+			setCurrentMobile(allData.allMobiles[0]);
+
+			let temp = { 0: {}, 1: {} },
+				barChartTemp = [],
+				pieChartTemp = [];
+			console.log(allData.allMobiles);
+
+			allData.allMobiles.forEach((v) => {
+				temp[0][v.year] = (temp[0][v.year] || 0) + 1;
+				temp[1][v.brand] = (temp[1][v.brand] || 0) + 1;
+			});
+
+			Object.keys(temp[0]).forEach((key, idx) => {
+				barChartTemp.push({ label: key, value: temp[0][key] });
+			});
+
+			Object.keys(temp[1]).forEach((key, idx) => {
+				pieChartTemp.push({ label: key, value: temp[1][key] });
+			});
+
+			setBarChartData(barChartTemp);
+			setPieChartData(pieChartTemp);
 		}
-		setCurrentMobiles(initialMobiles);
-		setCurrentMobile(initialMobiles[0]);
-
-		let allData = JSON.parse(localStorage.getItem("data")).allMobiles;
-		let temp = { 0: {}, 1: {} },
-			barChartTemp = [],
-			pieChartTemp = [];
-
-		allData.forEach((v) => {
-			temp[0][v.year] = (temp[0][v.year] || 0) + 1;
-			temp[1][v.brand] = (temp[1][v.brand] || 0) + 1;
-		});
-
-		Object.keys(temp[0]).forEach((key, idx) => {
-			barChartTemp.push({ label: key, value: temp[0][key] });
-		});
-
-		Object.keys(temp[1]).forEach((key, idx) => {
-			pieChartTemp.push({ label: key, value: temp[1][key] });
-		});
-
-		setBarChartData(barChartTemp);
-		setPieChartData(pieChartTemp);
 	}, []);
 
 	const handleSelect = (e) => {
@@ -125,8 +245,6 @@ export default function Home() {
 			if (!searchBrand && element.name === searchModelName) return element;
 			return null;
 		});
-		// console.log(searchBrand, searchModelName);
-		// console.log(tmp);
 
 		if (!tmp.length) {
 			alert("no mobiles found");
@@ -138,8 +256,8 @@ export default function Home() {
 	};
 
 	return (
-		<div className='container-fluid d-flex flex-row'>
-			<div className='w-50'>
+		<div className='container-fluid d-flex flex-column flex-xxl-row'>
+			<div className='col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12'>
 				<form onSubmit={handleSearch} className='container mt-5 mb-5'>
 					<div className='row justify-content-around mt-5 mb-5'>
 						<div className='col-4'>
@@ -212,7 +330,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className='w-50 d-flex flex-column justify-content-evenly align-items-center'>
+			<div className='col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5 d-flex flex-column justify-content-start align-items-center'>
 				<ReactFC {...barChartConfigs} />
 				<ReactFC {...pieChartConfigs} />
 			</div>

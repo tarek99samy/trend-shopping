@@ -5,7 +5,10 @@ export default function Navbar() {
 	return (
 		<nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
 			<div className='container-fluid ps-xl-3'>
-				<span className='navbar-brand fw-bolder fs-4'>Trend Shopping</span>
+				<Link className='nav-link fs-5 fw-normal' to='/'>
+					<span className='navbar-brand fw-bolder fs-4'>Trend Shopping</span>
+				</Link>
+
 				<button
 					className='navbar-toggler'
 					type='button'
